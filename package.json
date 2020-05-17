@@ -1,0 +1,19 @@
+{
+  "name": "first-repository",
+  "version": "1.0.0",
+  "description": "Primeiro repositório para aprendizado do Git e GitHub",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SamuelNeto/first-repository.git"
+  },
+  "author": "samuel-lang",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SamuelNeto/first-repository/issues"
+  },
+  "homepage": "https://github.com/SamuelNeto/first-repository#readme"
+}
