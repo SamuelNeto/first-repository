@@ -96,3 +96,14 @@ padding: 0;
 .menu a:hover, .menu a:focus {
 	background-color: #949400;
 }
+
+/* Menu Button
+#btn-menu {
+	display: none
+}
+label[for="btn-menu"] {
+	display: none
+}
+
+/* Responsiveness */
+@media(max-width: 800px) {}
