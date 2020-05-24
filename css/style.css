@@ -1,7 +1,6 @@
 /*
 display: inline-block;
 height: 40px;
-.menu ul li:hover a {}
 height: 200px;
 width: 100%;
 color: white;
@@ -18,7 +17,6 @@ a {
 
 .menu ul ul {
 	display: none;
-	position: absolute;
 }
 
 .menu ul li:hover {
@@ -31,7 +29,6 @@ a {
 }
 
 .menu ul ul ul {
-	margin-left: 201px;
 	top: 0px;
 	position: absolute;
 }
@@ -49,6 +46,11 @@ padding: 0;
 	background-color: #020e55;
 }
  */
+ /* Variables
+ $nav-color: ;
+ */
+
+/* Styles */ 
  * {
 	margin: 0;
 	padding: 0;
@@ -97,13 +99,58 @@ padding: 0;
 	background-color: #949400;
 }
 
-/* Menu Button
+/* Menu Button */
 #btn-menu {
 	display: none
 }
 label[for="btn-menu"] {
 	display: none
 }
+label[for="btn-menu"] {
+	background-color: #196d00;
+	color: #ddd;
+	cursor: pointer;
+	font-size: 35px;
+	height: 50px;
+	width: 50px;
+}
 
 /* Responsiveness */
-@media(max-width: 800px) {}
+@media(max-width: 800px) {
+	/*
+	#btn-menu {
+		display: block
+	}
+	background-color: #ddd;
+	color: #196d00; */
+
+	/* Button Menu */
+	label[for="btn-menu"] {
+		display: block
+	}
+
+	/* Navigation Menu */
+	.menu {
+		margin-top: 5px;
+		margin-left: -100%;
+		transition: all .4s;
+	}
+	.menu ul li {
+		float: none;
+	}
+	.menu ul ul {
+		position: static;
+		max-height: 0;
+		transition: all .4s;
+	}
+	.menu ul ul li {
+		background-color: #292902 ;
+	}
+	.menu ul li:hover ul {
+		height: auto;
+		max-height: 245px;
+	}
+	#btn-menu:checked ~ .menu {
+		margin-left: 0;
+	}
+}
