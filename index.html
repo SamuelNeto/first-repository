@@ -20,8 +20,8 @@
 			<li><a href="">Espírito Santo</a></li>
 		</ul> -->
 		<input type="checkbox" id="btn-menu">
-		<label for="btn-menu">&#9776;</label>
-		<nav class="menu">
+		<label for="btn-menu" class="sec-color">&#9776;</label>
+		<nav class="menu sec-color">
 			<ul>
 				<li><a href="#" id="home">Home</a></li>
 				<li><a href="#">Regiões</a>
@@ -39,7 +39,10 @@
 		</nav>
 	<!-- <script>
 		(function() {
-			const home = document.querySelector('#home')
+			const list_items = document.querySelector('.menu').getElementsByTagName('li')
+			for(let i = 2; i < 7; i++) {
+				list_items[i].class = ''
+			}
 		})()
 	</script> -->
 </body>
