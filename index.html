@@ -20,8 +20,8 @@
 		<li><a href="">Espírito Santo</a></li>
 	</ul> -->
 	<input type="checkbox" id="btn-menu">
-	<label for="btn-menu" class="sec-color">&#9776;</label>
-	<nav class="menu sec-color">
+	<label for="btn-menu" class="sec-back-color">&#9776;</label>
+	<nav class="menu sec-back-color">
 		<ul>
 			<li class="core-color"><a href="#" id="home">Home</a></li>
 			<li><a href="#">Regiões</a>
@@ -40,16 +40,24 @@
 	<script>
 		/* 
 		()()
+		&&
+		const l
 		list_items[i].addEventListener('click', setBackColor)
-		function setBackColor(){
-			const el = document.
-			el.style.backgroundColor = '#eeee44'
-		} */
+		if(!screenWidth <= 800) {
+		} else if(!(i < 2 || i > 6)) {
+			list_items[i].className = 'core-color sec-2-back-color'
+		}
+		function getScrWidth(ctx, next){
+			let screenWidth = screen.width
 
+			ctx.scrWidth = screenWidth
+		} */
+		let lists = document.getElementsByTagName('ul')
+		lists[1].style.backgroundColor = '#fff'
+		
 		const list_items = document.querySelector('.menu').getElementsByTagName('li')
 		for(let i = 0; i < list_items.length; i++) {
-			if(i < 2 || i > 6) {} else {}
-			list_items[i].className = 'core-color sec-color'
+			list_items[i].className = 'core-color sec-back-color'
 		}
 	</script>
 </body>
