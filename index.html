@@ -1,49 +1,56 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<meta charset="utf-8"/>
-		<title>BrRegions - Cidades e Estados</title>
-		<link rel="stylesheet" type="text/css" href="css/style.css"/>
-	</head>
-	<body>
-		<!-- <ul>
-			<li><a href="">Bahia</a></li>
-			<li><a href="">Pernambuco</a></li>
-			<li><a href="">Maranhão</a></li>
-			<li><a href="">Paraíba</a></li>
-			<li><a href="">Ceará</a></li>
-		</ul> -->
-		<!-- <ul>
-			<li><a href="">São Paulo</a></li>
-			<li><a href="">Rio de Janeiro</a></li>
-			<li><a href="">Minas Gerais</a></li>
-			<li><a href="">Espírito Santo</a></li>
-		</ul> -->
-		<input type="checkbox" id="btn-menu">
-		<label for="btn-menu" class="sec-color">&#9776;</label>
-		<nav class="menu sec-color">
-			<ul>
-				<li><a href="#" id="home">Home</a></li>
-				<li><a href="#">Regiões</a>
-					<ul>
-						<li><a href="#">Norte</a></li>
-						<li><a href="#">Nordeste</a></li>
-						<li><a href="#">Centro-oeste</a></li>
-						<li><a href="#">Sudeste</a></li>
-						<li><a href="#">Sul</a></li>
-					</ul>
-				</li>
-				<li><a href="#">Sobre</a></li>
-				<li><a href="#">Contato</a></li>
-			</ul>
-		</nav>
-	<!-- <script>
-		(function() {
-			const list_items = document.querySelector('.menu').getElementsByTagName('li')
-			for(let i = 2; i < 7; i++) {
-				list_items[i].class = ''
-			}
-		})()
-	</script> -->
+<head>
+	<meta charset="utf-8"/>
+	<title>BrRegions - Cidades e Estados</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css"/>
+</head>
+<body>
+	<!-- <ul>
+		<li><a href="">Bahia</a></li>
+		<li><a href="">Pernambuco</a></li>
+		<li><a href="">Maranhão</a></li>
+		<li><a href="">Paraíba</a></li>
+		<li><a href="">Ceará</a></li>
+	</ul> -->
+	<!-- <ul>
+		<li><a href="">São Paulo</a></li>
+		<li><a href="">Rio de Janeiro</a></li>
+		<li><a href="">Minas Gerais</a></li>
+		<li><a href="">Espírito Santo</a></li>
+	</ul> -->
+	<input type="checkbox" id="btn-menu">
+	<label for="btn-menu" class="sec-color">&#9776;</label>
+	<nav class="menu sec-color">
+		<ul>
+			<li class="core-color"><a href="#" id="home">Home</a></li>
+			<li><a href="#">Regiões</a>
+				<ul>
+					<li><a href="#">Norte</a></li>
+					<li><a href="#">Nordeste</a></li>
+					<li><a href="#">Centro-oeste</a></li>
+					<li><a href="#">Sudeste</a></li>
+					<li><a href="#">Sul</a></li>
+				</ul>
+			</li>
+			<li><a href="#">Sobre</a></li>
+			<li><a href="#">Contato</a></li>
+		</ul>
+	</nav>
+	<script>
+		/* 
+		()()
+		list_items[i].addEventListener('click', setBackColor)
+		function setBackColor(){
+			const el = document.
+			el.style.backgroundColor = '#eeee44'
+		} */
+
+		const list_items = document.querySelector('.menu').getElementsByTagName('li')
+		for(let i = 0; i < list_items.length; i++) {
+			if(i < 2 || i > 6) {} else {}
+			list_items[i].className = 'core-color sec-color'
+		}
+	</script>
 </body>
 </html>
