@@ -22,6 +22,7 @@
 	<input type="checkbox" id="btn-menu">
 	<label for="btn-menu" class="sec-back-color">&#9776;</label>
 	<nav class="menu sec-back-color">
+		<img src="img/lupa.png" alt="Botão de Pesquisa" class="btn-search">
 		<ul>
 			<li class="core-color"><a href="#" id="home">Home</a></li>
 			<li><a href="#">Regiões</a>
@@ -47,10 +48,11 @@
 		} else if(!(i < 2 || i > 6)) {
 			list_items[i].className = 'core-color sec-2-back-color'
 		}
-		function getScrWidth(ctx, next){
+		const setClassName = ctx => {}
+		const getScrWidth = (ctx, next) => {
 			let screenWidth = screen.width
-
 			ctx.scrWidth = screenWidth
+			next()
 		} */
 		let lists = document.getElementsByTagName('ul')
 		lists[1].style.backgroundColor = '#fff'
