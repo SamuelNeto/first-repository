@@ -1,0 +1,79 @@
+/*
+@charset "UTF-8";
+display: inline-block;
+height: 200px;
+line-height: 40px;
+font-size: 25px;
+.menu + ul {}
+a {
+	text-decoration: none;
+	padding: 6px 35px;
+}
+.menu ul ul {}
+.menu ul li:hover {
+	cursor: pointer;
+}
+.menu ul li {
+}
+.menu ul ul ul {
+	top: 0px;
+	position: absolute;
+}
+.menu ul ul {
+	position: absolute;
+}
+.menu ul + a {}
+#btn-menu {
+	margin: 0 auto;
+}
+.box-search {
+	position: relative;
+	display: flex;
+	align-items: center;
+}
+.menu ul ul li:hover {}
+.menu a:hover, .menu a:focus {}
+.menu ul ul ul li:hover {}
+background-color: #444
+background-color: #ddd;
+display: block
+background-color: #5186db
+background-color: #4444ee;
+height: 50px;
+display: inline;
+display: none;
+border: 1px solid #fff;
+color: #000
+display: none;
+margin: 0;
+*/
+/* Variables
+$nav-color: ;
+*/
+
+/* Styles */ 
+* {
+	margin: 0;
+	padding: 0;
+}
+
+/* Colors */
+.core-color-l {
+	color: #fff;
+}
+.core-color-img {
+	color: #fff;
+}
+.core-color-img:hover {
+	background-color: #444;
+}
+.core-color-l:hover > a, .core-color-l:focus > a {
+	background-color: #fff;
+	color: #000;
+}
+.sec-back-color {
+	background-color: #000;
+}
+.sec-2-back-color {
+	background-color: #262626;
+}

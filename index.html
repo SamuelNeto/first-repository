@@ -3,7 +3,10 @@
 <head>
 	<meta charset="utf-8"/>
 	<title>BrRegions - Cidades e Estados</title>
-	<link rel="stylesheet" type="text/css" href="css/style.css"/>
+	<link rel="stylesheet" type="text/css" href="css/colors.css"/>
+	<link rel="stylesheet" href="css/components.css">
+	<link rel="stylesheet" href="css/menu.css">
+	<link rel="stylesheet" href="css/responsive.css">
 </head>
 <body>
 	<!-- <ul>
@@ -22,44 +25,69 @@
 	<input type="checkbox" id="btn-menu">
 	<label for="btn-menu" class="sec-back-color">&#9776;</label>
 	<nav class="menu sec-back-color">
-		<img src="img/lupa.png" alt="Botão de Pesquisa" class="btn-search">
-		<ul>
-			<li class="core-color"><a href="#" id="home">Home</a></li>
-			<li><a href="#">Regiões</a>
-				<ul>
-					<li><a href="#">Norte</a></li>
-					<li><a href="#">Nordeste</a></li>
-					<li><a href="#">Centro-oeste</a></li>
-					<li><a href="#">Sudeste</a></li>
-					<li><a href="#">Sul</a></li>
-				</ul>
-			</li>
-			<li><a href="#">Sobre</a></li>
-			<li><a href="#">Contato</a></li>
-		</ul>
+		<div class="nav-flex">
+			<div id="box-search"></div>
+			<div class="img-search" onmousemove="setMargOfLookF()">
+				<img src="img/lupa.png" alt="Botão de Pesquisa" class="btn-search core-color-img">
+			</div>
+			<input type="search" name="lookf" id="lookf">
+			<ul>
+				<li class="core-color"><a href="#" id="home">Home</a></li>
+				<li><a href="#">Regiões</a>
+					<ul>
+						<li><a href="#">Norte</a></li>
+						<li><a href="#">Nordeste</a></li>
+						<li><a href="#">Centro-oeste</a></li>
+						<li><a href="#">Sudeste</a></li>
+						<li><a href="#">Sul</a></li>
+					</ul>
+				</li>
+				<li><a href="#">Sobre</a></li>
+				<li><a href="#">Contato</a></li>
+			</ul>
+		</div>
 	</nav>
 	<script>
 		/* 
+		const setFieldD = (init=1) => {
+			if(init == 0) {
+				field.style.transition = 'all .9s'
+			}
+			field.placeholder = ''
+			field.style.width = '30px'
+			// field.style.visibility = 'hidden'
+		}
+
+
 		()()
 		&&
-		const l
-		list_items[i].addEventListener('click', setBackColor)
+		list_items[i]
 		if(!screenWidth <= 800) {
 		} else if(!(i < 2 || i > 6)) {
 			list_items[i].className = 'core-color sec-2-back-color'
 		}
-		const setClassName = ctx => {}
-		const getScrWidth = (ctx, next) => {
+		(ctx, next) => {
 			let screenWidth = screen.width
 			ctx.scrWidth = screenWidth
 			next()
 		} */
+		/* const setMargOfLookF = () => {
+			lookfor.style.marginLeft = '0'
+		}
 		let lists = document.getElementsByTagName('ul')
 		lists[1].style.backgroundColor = '#fff'
+		const box_search = document.getElementById('box-search')
+		const field = document.getElementById('lookf')
+
+		box_search.addEventListener('mousemove', function(){
+			field.style.visibility = 'visible'
+  			field.style.width = '350px'
+  			field.placeholder = 'Pesquisar'
+		}) */
 		
 		const list_items = document.querySelector('.menu').getElementsByTagName('li')
 		for(let i = 0; i < list_items.length; i++) {
-			list_items[i].className = 'core-color sec-back-color'
+			list_items[i].className = 'core-color-l sec-back-color'
 		}
 	</script>
 </body>

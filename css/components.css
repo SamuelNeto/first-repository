@@ -1,0 +1,38 @@
+/* Menu Button */
+#btn-menu {
+	display: none
+}
+label[for="btn-menu"] {
+	display: none
+}
+label[for="btn-menu"] {
+	color: #ddd;
+	cursor: pointer;
+	font-size: 35px;
+	height: 50px;
+	width: 50px;
+}
+
+/* Search Button and Bar */
+.btn-search {
+	height: 25px;
+	width: 25px;
+}
+#lookf {
+	transition: all .9s;
+	visibility: visible;
+	width: 250px;
+}
+
+/* Search Image */
+.img-search {
+	padding: 10px;
+	padding-top: 12px;
+	padding-bottom: 8px;
+}
+.img-search:hover {
+	cursor: pointer;
+}
+.img-search:hover ~ #lookf {
+	display: block
+}
