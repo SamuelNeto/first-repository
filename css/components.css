@@ -20,8 +20,11 @@ label[for="btn-menu"] {
 }
 #lookf {
 	transition: all .9s;
-	visibility: visible;
-	width: 250px;
+	border-radius: 0;
+	visibility: hidden;
+	width: 20px;
+	padding: 1px 5px;
+	margin: 0 10px 0 1px
 }
 
 /* Search Image */

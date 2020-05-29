@@ -7,7 +7,6 @@ font-size: 25px;
 .menu + ul {}
 a {
 	text-decoration: none;
-	padding: 6px 35px;
 }
 .menu ul ul {}
 .menu ul li:hover {
@@ -23,9 +22,7 @@ a {
 	position: absolute;
 }
 .menu ul + a {}
-#btn-menu {
-	margin: 0 auto;
-}
+#btn-menu {}
 .box-search {
 	position: relative;
 	display: flex;
